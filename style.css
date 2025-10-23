@@ -3,13 +3,13 @@
 
 /*Setting variables*/
 :root {
-    --white: #f6f6f6;
-    --main-green: ;
-    --secondary-green: ;
+    --white: #fffcee;
+    --main-green: #355e3e;
+    --secondary-green: #82a78a;
     --black: #000e01;
 
-    --title-font: ;
-    --paragraph-font: ;
+    --title-font: ,serif;
+    --paragraph-font: ,sans-serif;
 }
 
 /*Reseting css*/
@@ -17,11 +17,51 @@
     margin: 0;
     padding: 0;
     border: 0px;
-    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--black);
+}
+
+header {
+    background-color: var(--main-green);
+    height: 5rem;
+    position: sticky;
 }
 
 body {
-    background-color: var(--branco);
+    background-color: var(--white);
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 30rem 5rem 30rem;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.apresentacao__foto {
+    width: 30rem;
+    height: 30rem;
+}
+
+.apresentacao__titulo {
+    font-family: var(--title-font);
+    font-size: 3rem;
+}
+
+span {
+    color: var(--main-green);
+}
+
+.apresentacao__subtitulo {
+    color: var(--secondary-green);
+    font-family: var(--subtitle-font);
+    font-style: italic;
+    font-size: 1.5rem;
+}
 /*responsiveness settings*/
