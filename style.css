@@ -1,5 +1,5 @@
 /*font import*/
-
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*Setting variables*/
 :root {
@@ -8,8 +8,8 @@
     --secondary-green: #82a78a;
     --black: #000e01;
 
-    --title-font: ,serif;
-    --paragraph-font: ,sans-serif;
+    --title-font: 'Bree Serif',serif;
+    --paragraph-font: 'Montserrat',sans-serif;
 }
 
 /*Reseting css*/
@@ -21,20 +21,41 @@
     color: var(--black);
 }
 
-header {
-    background-color: var(--main-green);
-    height: 5rem;
-    position: sticky;
-}
-
 body {
     background-color: var(--white);
+    font-family: var(--paragraph-font);
+}
+
+nav {
+    background-color: var(--main-green);
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    position: sticky;
+    text-align: center;
+    height: 4rem;
+}
+
+.nav__link {
+    color: var(--white);
+    font-family: var(--title-font);
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: var(--main-green);
+    text-align: center;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+    background-color: var(--secondary-green);
+    color: var(--black);
 }
 
 main{
     display: flex;
     flex-direction: column;
-    margin: 5rem 30rem 5rem 30rem;
+    margin: 5% 25% 5% 25%;
 }
 
 .apresentacao {
@@ -49,6 +70,12 @@ main{
     height: 30rem;
 }
 
+.apresentacao__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .apresentacao__titulo {
     font-family: var(--title-font);
     font-size: 3rem;
@@ -60,8 +87,7 @@ span {
 
 .apresentacao__subtitulo {
     color: var(--secondary-green);
-    font-family: var(--subtitle-font);
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 /*responsiveness settings*/
