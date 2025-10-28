@@ -6,19 +6,23 @@
     <link rel="stylesheet" href="style.css">
     <title>Marco Túlio Pereira Borges</title>
 </head>
-<body>
+<body id="home">
     <header>
         <nav>
-            <a href="#apresentacao" class="nav__link">Início</a>
-            <a href="#" class="nav__link">Experiências</a>
-            <a href="#" class="nav__link">Formação</a>
-            <a href="#" class="nav__link">Habilidades</a>
-            <a href="#" class="nav__link">Certificações</a>
+            <ul class="nav__links">
+                <li class="nav__link"><a href="#home">Início</a></li>
+                <li class="nav__link"><a href="#experiences">Experiências</a></li>
+                <li class="nav__link"><a href="#graduation">Formação</a></li>
+                <li class="nav__link"><a href="#habilities">Habilidades</a></li>
+                <li class="nav__link"><a href="#certificates">Certificações</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <section id="presentation" class="presentation">
-            <img src="assets/fotoDePerfil.jpg" alt="Foto de Marco Túlio Pereira Borges" class="presentation__img">
+            <section class="presentation__img">
+                <img id="profile__pic" src="assets/fotoDePerfil.jpg" alt="Foto de Marco Túlio Pereira Borges">
+            </section>
             <section class="presentation__text">
                 <h1 class="presentation__title"><span>&#123 </span>Marco Túlio<span> &#125</span> Pereira Borges</h1>
                 <p class="presentation__subtitle">Desenvolvedor Front-end / Designer Gráfico</p>   
@@ -29,7 +33,83 @@
         </section>
         <section id="resumen">
             <h2 class="section__title"><span>&#123 </span>Resumo<span> &#125</span></h2>
-            <p>Cursando Bacharelado em Sistemas de Informação na Universidade de Uberaba (UNIUBE), com previsão de conclusão em dezembro de 2027. Minha formação prévia inclui um tecnólogo em Design Gráfico pela Universidade de Franca concluído em 2020, curso de auxiliar técnico em programação e web design pela People Informática concluído em 2015, o que me proporciona uma base sólida em tecnologia e design.</p>
+            <article class="experience">
+            <p class="experience__text">Cursando Bacharelado em Sistemas de Informação na Universidade de Uberaba (UNIUBE), com previsão de conclusão em dezembro de 2027. Minha formação prévia inclui um tecnólogo em Design Gráfico pela Universidade de Franca concluído em 2020, curso de auxiliar técnico em programação e web design pela People Informática concluído em 2015, o que me proporciona uma base sólida em tecnologia e design.</p>
+            </article>
+        </section>
+        <section id="experiences">
+            <h2 class="section__title"><span>&#123 </span>Experiências Profissionais<span> &#125</span></h2>
+            <article class="experience">
+                <h3 class="experience__title">PRODAUB</h3>
+                <p class="experience__subtitle">Analista de suporte de sistemas N1 - estagiário</p>
+                <p class="experience__date">Abril de 2025 – Presente - Uberlândia, Minas Gerais, Brasil</p>
+                <p class="experience__text">Estagiário de Análise de suporte N1 no setor de processamento de dados de Uberlândia (PRODAUB). Responsável por atender a demandas em sistema de ticket, realizando suporte técnico aos usuários dos sistemas da Prefeitura de Uberlândia e das autarquias municipais.</p>
+            </article>
+            <article class="experience">
+                <h3 class="experience__title">BORGES DESIGN</h3>
+                <p class="experience__subtitle">Designer Gráfico</p>
+                <p class="experience__date">Fevereiro de 2016 – Presente - Uberlândia, Minas Gerais, Brasil</p>
+                <p class="experience__text">Desenvolvi campanhas e projetos de nível nacional em conjunto com produtoras de vídeo locais, além tornar realidade a visão de empreendedores sobre suas empresas com criação de logotipos, identidades visuais e materiais gráficos.</p>
+            </article>
+            <article class="experience">
+                <h3 class="experience__title">BEAVER MUSIC</h3>
+                <p class="experience__subtitle">Analista de Mídias Sociais</p>
+                <p class="experience__date">Setembro de 2023 – Abril de 2025 - Uberlândia, Minas Gerais, Brasil</p>
+                <p class="experience__text">Responsável pelo crescimento de aproximadamente 40% na presença digital da empresa nas principais redes sociais, utilizando de análise de insights para direcionar o conteúdo para ter o melhor alcance e repercussão possível. Durante esse período, também criei materiais gráficos para divulgação de eventos e lançamentos de produtos de diferentes marcas do nicho musical.</p>
+            </article>
+        </section>
+        <section id="graduation">
+            <h2 class="section__title"><span>&#123 </span>Formação Acadêmica<span> &#125</span></h2>
+            <article class="experience">
+                <h3 class="experience__title">UNIUBE</h3>
+                <p class="experience__subtitle">Bacharelado em Sistemas de Informação</p>
+                <p class="experience__date">Outubro de 2024 – Dezembro de 2027 - Uberlândia, Minas Gerais, Brasil</p>
+            </article>
+            <article class="experience">
+                <h3 class="experience__title">UNIFRAN</h3>
+                <p class="experience__subtitle">Tecnólogo em Design Gráfico</p>
+                <p class="experience__date">Fevereiro de 2018 – Dezembro de 2020 - Uberlândia, Minas Gerais, Brasil</p>
+            </article>
+            <article class="experience">
+                <h3 class="experience__title">People Informática</h3>
+                <p class="experience__subtitle">Técnico em Web Design</p>
+                <p class="experience__date">Fevereiro de 2014 - Julho de 2015 - Uberlândia, Minas Gerais, Brasil</p>
+            </article>
+            <article class="experience">
+                <h3 class="experience__title">People Informática</h3>
+                <p class="experience__subtitle">Técnico em Programação</p>
+                <p class="experience__date">Fevereiro de 2014 - Julho de 2015 - Uberlândia, Minas Gerais, Brasil</p>
+            </article>
+        </section>
+        <section id="habilities">
+            <h2 class="section__title"><span>&#123 </span>Habilidades<span> &#125</span></h2>
+            <section class="habilities">
+                <article class="experience habilities__list">
+                    <h3 class="experience__title">Idiomas</h3>
+                    <ul class="experience__text">
+                        <li>Português - Nativo</li>
+                        <li>Inglês - Proficiente</li>
+                        <li>Espanhol - Básico</li>
+                        <li>Francês - Iniciante</li>
+                    </ul>
+                </article>
+                <article class="experience habilities__list">
+                    <h3 class="experience__title">Design</h3>
+                    <ul class="experience__text">
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe After Effects</li>
+                        <li>Figma</li>
+                    </ul>
+                </article>
+                <article class="experience habilities__list">
+                    <h3 class="experience__title">Banco de dados</h3>
+                    <ul class="experience__text">
+                        <li>SQL Server</li>
+                        <li>Oracle</li>
+                    </ul>
+                </article>
+            </section>
         </section>
     </main>
     <footer>
