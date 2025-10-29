@@ -33,6 +33,7 @@ a:hover {
 body {
     background-color: var(--bege);
     font-family: var(--paragraph-font);
+    color: var(--black)
 }
 
 header {
@@ -135,6 +136,7 @@ span {
     border-radius: 1rem;
     margin-top:2rem;
     box-shadow: #000e0133 0px 4px 8px -2px;
+    font-size: 1.2rem;
 }
 
 .experience__title {
@@ -155,25 +157,33 @@ span {
     font-weight: light;
 }
 
-.experience__text {
-    font-size: 1.2rem;
-}
-
 .habilities {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3%;
 }
 
 .habilities__list {
-    width: 30%;
-    align-items: center;
+    min-width: 25%;
+    align-items: flex-start;
     justify-content: flex-start;
 }
 
+li.experience {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+li.experience:hover {
+    padding: 2.25rem;
+    transition: all 0.2s ease-in-out;
+}
+
 footer {
-    color: var(--bege);
+    color: var(--bege) !important;
     display: flex;
     position: relative;
     bottom: 0;
@@ -182,6 +192,7 @@ footer {
     background-color: var(--main-green);
     height: 4rem;
 }
+
 /*responsiveness settings*/
 @media (max-width: 1024px) {
     main {
@@ -239,8 +250,8 @@ footer {
 
     .habilities {
         flex-direction: column;
+        flex-wrap: nowrap;
         align-items: center;
-        gap: 0.1rem;
     }
 
     .habilities__list {
