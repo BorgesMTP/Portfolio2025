@@ -236,4 +236,14 @@ footer {
         font-size: 2.5rem;
         text-align: center;
     }
+
+    .habilities {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.1rem;
+    }
+
+    .habilities__list {
+        width: 100%;
+    }
 }
