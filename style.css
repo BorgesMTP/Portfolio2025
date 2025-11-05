@@ -264,4 +264,8 @@ footer {
     .habilities__list {
         width: 100%;
     }
+
+    footer {
+        font-size: 0.8rem;
+    }
 }
