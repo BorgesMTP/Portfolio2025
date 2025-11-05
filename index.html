@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
     <title>Marco Túlio Pereira Borges</title>
 </head>
 <body id="home">
     <header>
         <nav>
+            <label for="nav__checkbox" class="nav__img"></label>
+            <input type="checkbox" class="nav__img" id="nav__checkbox" hidden>
             <ul class="nav__links">
-                <li class="nav__link"><a href="#home">Início</a></li>
-                <li class="nav__link"><a href="#experiences">Experiências</a></li>
-                <li class="nav__link"><a href="#graduation">Formação</a></li>
-                <li class="nav__link"><a href="#habilities">Habilidades</a></li>
-                <li class="nav__link"><a href="#certificates">Certificações</a></li>
+                <li><a href="#home" class="nav__link" onclick="uncheck()">Início</a></li>
+                <li><a href="#experiences" class="nav__link" onclick="uncheck()">Experiências</a></li>
+                <li><a href="#graduation" class="nav__link" onclick="uncheck()">Formação</a></li>
+                <li><a href="#habilities" class="nav__link" onclick="uncheck()">Habilidades</a></li>
+                <li><a href="#certificates" class="nav__link" onclick="uncheck()">Certificações</a></li>
             </ul>
         </nav>
     </header>
@@ -81,9 +84,9 @@
                 <p class="experience__date">Fevereiro de 2014 - Julho de 2015 - Uberlândia, Minas Gerais, Brasil</p>
             </article>
         </section>
-        <section id="habilities">
+        <section id="habilities" class="habilities">
             <h2 class="section__title"><span>&#123 </span>Habilidades<span> &#125</span></h2>
-            <section class="habilities">
+            <section class="habilities__lists">
                 <article class="experience habilities__list">
                     <h3 class="experience__title">Idiomas</h3>
                     <ul class="experience__text">

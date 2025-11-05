@@ -11,6 +11,7 @@
 
     --title-font: 'Bree Serif',serif;
     --paragraph-font: 'Montserrat',sans-serif;
+    --menu-img: url('../assets/layers.svg');
 }
 
 /*Reseting css*/
@@ -47,19 +48,21 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 1rem;
 }
 
 .nav__links {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
 .nav__link {
     color: var(--bege);
     font-family: var(--title-font);
     font-size: 1.2rem;
-    padding: 1rem;
+    padding:1rem;
     background-color: var(--main-green);
     text-align: center;
     border-radius: 1rem;
@@ -159,14 +162,19 @@ span {
 
 .habilities {
     display: flex;
+    flex-direction: column;
+}
+
+.habilities__lists {
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-content: flex-start;
     flex-wrap: wrap;
-    gap: 3%;
 }
 
 .habilities__list {
-    min-width: 25%;
+    width: 25%;
     align-items: flex-start;
     justify-content: flex-start;
 }
@@ -175,11 +183,6 @@ li.experience {
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-li.experience:hover {
-    padding: 2.25rem;
-    transition: all 0.2s ease-in-out;
 }
 
 footer {
@@ -197,25 +200,41 @@ footer {
 @media (max-width: 1024px) {
     main {
         display: flex;
-        margin: 5%;
+        margin: 0;
+        padding: 5%;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
 
-    header {
-        position: static;
-        top: 0;
-    }
-
     nav {
         position: inherit;
         flex-direction: column;
+        height: auto;
     }
 
-    ul.nav__links {
+    .nav__img {
+        background-image: var(--menu-img);
+        background-repeat: no-repeat;
+        align-self: flex-start;
+        width: 2rem;
+        height: 2rem;
+        color: var(--bege);
+    }
+
+    .nav__links {
+        display: none;
+    }
+
+    .nav__img:checked + .nav__links {
+        display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .nav__link: + .nav__links {
+        display: none;
     }
 
     .presentation {
@@ -248,9 +267,7 @@ footer {
         text-align: center;
     }
 
-    .habilities {
-        flex-direction: column;
-        flex-wrap: nowrap;
+    .habilities__lists {
         align-items: center;
     }
 
