@@ -179,12 +179,6 @@ span {
     justify-content: flex-start;
 }
 
-li.experience {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 footer {
     color: var(--bege) !important;
     display: flex;
@@ -231,10 +225,6 @@ footer {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
-    }
-
-    .nav__link: + .nav__links {
-        display: none;
     }
 
     .presentation {
